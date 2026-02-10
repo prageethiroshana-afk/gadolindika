@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Indika Gadol</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            light: '#ef5350',
+                            DEFAULT: '#c62828',
+                            dark: '#b71c1c',
+                        },
+                        stone: {
+                            50: '#fafaf9',
+                            900: '#1c1917',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-stone-50 text-stone-900 font-sans antialiased">
+
+    <!-- Navbar (Same as Index) -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-3xl font-bold text-brand-dark tracking-tighter">
+                        INDIKA<span class="text-stone-800">GADOL</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-stone-600 hover:text-brand font-medium transition-colors">Home</a>
+                    <a href="products.html" class="text-brand font-bold transition-colors">Products</a>
+                    <a href="about.html" class="text-stone-600 hover:text-brand font-medium transition-colors">About
+                        Us</a>
+                    <a href="contact.html"
+                        class="px-5 py-2.5 bg-brand hover:bg-brand-dark text-white font-semibold rounded-full transition-all shadow-lg hover:shadow-brand/30 transform hover:-translate-y-0.5">Contact
+                        Us</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-stone-600 hover:text-brand focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden bg-white border-t border-stone-100" id="mobile-menu">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html"
+                    class="block py-3 text-base font-medium text-stone-800 hover:text-brand border-b border-stone-50">Home</a>
+                <a href="products.html"
+                    class="block py-3 text-base font-bold text-brand border-b border-stone-50">Products</a>
+                <a href="about.html"
+                    class="block py-3 text-base font-medium text-stone-800 hover:text-brand border-b border-stone-50">About
+                    Us</a>
+                <a href="contact.html"
+                    class="block mt-4 py-3 text-center text-base font-bold text-white bg-brand rounded-lg">Contact
+                    Us</a>
+            </div>
+        </div>
+    </nav>
+    <div class="h-20"></div>
+
+    <header class="bg-stone-900 text-white py-20 relative overflow-hidden">
+        <div
+            class="absolute inset-0 bg-brand/10 bg-[url('https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-30 mix-blend-overlay">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Products</h1>
+            <p class="text-xl text-brand-light max-w-2xl mx-auto">Built to last generations.</p>
+        </div>
+    </header>
+
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Product 1 -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-stone-100 flex flex-col">
+                    <div class="h-64 bg-stone-200 relative overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Wire Cut Bricks"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+                        <span
+                            class="absolute top-4 right-4 bg-brand text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Best
+                            Seller</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-2xl font-bold text-stone-900 mb-2">Wire Cut Red Bricks</h3>
+                        <p class="text-stone-500 text-sm mb-4">High-density, smooth finish bricks perfect for exposed
+                            brick walls and structural integrity.</p>
+                        <div class="mt-auto pt-4 border-t border-stone-100 flex justify-between items-center">
+                            <div>
+                                <span class="text-xs text-stone-400 block uppercase tracking-wider font-semibold">Price
+                                    per 1000</span>
+                                <span class="text-xl font-bold text-brand">Rs. 32,000*</span>
+                            </div>
+                            <a href="contact.html"
+                                class="w-10 h-10 rounded-full bg-stone-100 hover:bg-brand text-stone-600 hover:text-white flex items-center justify-center transition-all">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-stone-100 flex flex-col">
+                    <div class="h-64 bg-stone-200 relative overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Standard Clay Bricks"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-2xl font-bold text-stone-900 mb-2">Standard Clay Bricks</h3>
+                        <p class="text-stone-500 text-sm mb-4">Traditional kiln-fired clay bricks. Excellent for general
+                            construction and foundations.</p>
+                        <div class="mt-auto pt-4 border-t border-stone-100 flex justify-between items-center">
+                            <div>
+                                <span class="text-xs text-stone-400 block uppercase tracking-wider font-semibold">Price
+                                    per 1000</span>
+                                <span class="text-xl font-bold text-brand">Rs. 28,000*</span>
+                            </div>
+                            <a href="contact.html"
+                                class="w-10 h-10 rounded-full bg-stone-100 hover:bg-brand text-stone-600 hover:text-white flex items-center justify-center transition-all">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-stone-100 flex flex-col">
+                    <div class="h-64 bg-stone-200 relative overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1599708153386-62e584a51137?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Cement Blocks"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-2xl font-bold text-stone-900 mb-2">Cement Blocks</h3>
+                        <p class="text-stone-500 text-sm mb-4">Strong and durable cement blocks for rapid wall
+                            construction. Available in 4", 6", and 8".</p>
+                        <div class="mt-auto pt-4 border-t border-stone-100 flex justify-between items-center">
+                            <div>
+                                <span class="text-xs text-stone-400 block uppercase tracking-wider font-semibold">Starts
+                                    from</span>
+                                <span class="text-xl font-bold text-brand">Rs. 65 / block</span>
+                            </div>
+                            <a href="contact.html"
+                                class="w-10 h-10 rounded-full bg-stone-100 hover:bg-brand text-stone-600 hover:text-white flex items-center justify-center transition-all">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="text-stone-400 text-sm mt-12 text-center italic">*Prices are subject to change based on market
+                conditions and quantity. Contact us for the latest rates.</p>
+        </div>
+    </section>
+
+    <!-- Transport Banner -->
+    <section class="bg-brand text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-6">
+                <div class="bg-white/20 p-4 rounded-full">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold">Island-wide Delivery</h3>
+                    <p class="text-brand-100">We transport directly to your site with our own fleet.</p>
+                </div>
+            </div>
+            <a href="contact.html"
+                class="px-8 py-3 bg-white text-brand-dark font-bold rounded-lg hover:bg-stone-100 transition-colors shadow-lg">Check
+                Delivery Rates</a>
+        </div>
+    </section>
+
+    <!-- Footer (Same as Index) -->
+    <footer class="bg-stone-900 border-t border-stone-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="index.html" class="text-2xl font-bold text-white mb-4 inline-block">INDIKA<span
+                            class="text-brand">GADOL</span></a>
+                    <p class="text-stone-400 mb-6 max-w-sm">
+                        Providing the nation with strong foundations. We are committed to quality, integrity, and
+                        customer satisfaction in every brick we sell.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-stone-400 hover:text-brand transition-colors">Home</a></li>
+                        <li><a href="products.html" class="text-stone-400 hover:text-brand transition-colors">Our
+                                Products</a></li>
+                        <li><a href="about.html" class="text-stone-400 hover:text-brand transition-colors">About Us</a>
+                        </li>
+                        <li><a href="contact.html" class="text-stone-400 hover:text-brand transition-colors">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Contact Info</h4>
+                    <ul class="space-y-3 text-stone-400">
+                        <li>+94 71 234 5678</li>
+                        <li>sales@indikagadol.lk</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-t border-stone-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-stone-500">
+                <p>&copy; 2026 Indika Gadol. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
